@@ -11,8 +11,8 @@ struct PrototypesView: View {
     var body: some View {
         List {
             UserView()
-            UserView()
-            UserView()
+            UserOnlineView()
+            GroupView()
         }.modifier(PlainList())
     }
 }
