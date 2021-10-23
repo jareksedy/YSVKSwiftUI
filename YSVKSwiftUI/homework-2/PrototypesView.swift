@@ -10,23 +10,15 @@ import SwiftUI
 struct PrototypesView: View {
     var body: some View {
         List {
-            Text("Hi there").padding()
-            Text("Holy shit!").padding()
+            UserView()
+            UserView()
+            UserView()
         }.modifier(PlainList())
     }
 }
 
 struct PrototypesView_Previews: PreviewProvider {
     static var previews: some View {
-        PrototypesView()
-    }
-}
-
-// MARK: - View modifiers.
-
-struct PlainList: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .listStyle(.plain)
+        PrototypesView().preferredColorScheme(.dark)
     }
 }
