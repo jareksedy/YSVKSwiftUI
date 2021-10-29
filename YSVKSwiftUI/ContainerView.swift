@@ -15,7 +15,7 @@ struct ContainerView: View {
            HStack {
                LoginScreenView(isLoggedIn: $shouldShowMainView)
                
-               NavigationLink(destination: PrototypesView(), isActive: $shouldShowMainView) {
+               NavigationLink(destination: MainTabView(), isActive: $shouldShowMainView) {
                    EmptyView()
                }
            }
