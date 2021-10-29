@@ -7,9 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginScreenView: View {
+    @State private var showLoginError = false
     @State var login = ""
     @State var pass = ""
+    @Binding var isLoggedIn: Bool
+    
+    private func verifyCredentials() {
+        if login == "Foo" && pass == "Bar" {
+            isLoggedIn = true
+        } else {
+            showLoginError = true
+        }
+        pass = ""
+    }
+    
     
     var body: some View {
         
@@ -43,6 +55,7 @@ struct ContentView: View {
                 HStack {
                     
                     Button("Войти") {
+                        verifyCredentials()
                     }
                     .padding()
                     .background(Color.blue)
@@ -76,12 +89,15 @@ struct ContentView: View {
             }.padding()
             
             Spacer()
-        }
+        }.alert(isPresented: $showLoginError, content: {
+            Alert(title: Text("Error"),
+                  message: Text("Incorrent Login/Password was entered"))
+        })
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//
+//struct LoginScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginScreenView(isLoggedIn: false)
+//    }
+//}

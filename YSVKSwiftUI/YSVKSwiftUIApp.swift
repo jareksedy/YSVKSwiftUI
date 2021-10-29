@@ -11,7 +11,7 @@ import SwiftUI
 struct YSVKSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            PrototypesView()
+            ContainerView()
         }
     }
 }

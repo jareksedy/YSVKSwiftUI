@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA693962272C517E003A8293 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA693961272C517E003A8293 /* ContainerView.swift */; };
 		CA7A040F2724612800352942 /* PrototypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A040E2724612800352942 /* PrototypesView.swift */; };
 		CA7A04112724641800352942 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A04102724641800352942 /* UserView.swift */; };
 		CA7A041327246EB000352942 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A041227246EB000352942 /* Modifiers.swift */; };
@@ -14,12 +15,13 @@
 		CA7A041A272480BC00352942 /* UserOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A0419272480BC00352942 /* UserOnlineView.swift */; };
 		CA7A041C272482A500352942 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A041B272482A500352942 /* GroupView.swift */; };
 		CAEFBA232721B93C004D4056 /* YSVKSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */; };
-		CAEFBA252721B93C004D4056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFBA242721B93C004D4056 /* ContentView.swift */; };
+		CAEFBA252721B93C004D4056 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFBA242721B93C004D4056 /* LoginScreenView.swift */; };
 		CAEFBA272721B942004D4056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEFBA262721B942004D4056 /* Assets.xcassets */; };
 		CAEFBA2A2721B942004D4056 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEFBA292721B942004D4056 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA693961272C517E003A8293 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		CA7A040E2724612800352942 /* PrototypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypesView.swift; sourceTree = "<group>"; };
 		CA7A04102724641800352942 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		CA7A041227246EB000352942 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		CA7A041B272482A500352942 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		CAEFBA1F2721B93C004D4056 /* YSVKSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSVKSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSVKSwiftUIApp.swift; sourceTree = "<group>"; };
-		CAEFBA242721B93C004D4056 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAEFBA242721B93C004D4056 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		CAEFBA262721B942004D4056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEFBA292721B942004D4056 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,25 +46,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA7A040A2724601B00352942 /* homework-1 */ = {
-			isa = PBXGroup;
-			children = (
-				CAEFBA242721B93C004D4056 /* ContentView.swift */,
-			);
-			path = "homework-1";
-			sourceTree = "<group>";
-		};
-		CA7A040D2724603E00352942 /* homework-2 */ = {
-			isa = PBXGroup;
-			children = (
-				CA7A041427246EC600352942 /* Modifiers */,
-				CA7A0418272476FF00352942 /* Builders */,
-				CA7A041527246EDA00352942 /* SubViews */,
-				CA7A040E2724612800352942 /* PrototypesView.swift */,
-			);
-			path = "homework-2";
-			sourceTree = "<group>";
-		};
 		CA7A041427246EC600352942 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */,
-				CA7A040D2724603E00352942 /* homework-2 */,
-				CA7A040A2724601B00352942 /* homework-1 */,
+				CA7A041427246EC600352942 /* Modifiers */,
+				CA7A0418272476FF00352942 /* Builders */,
+				CA7A041527246EDA00352942 /* SubViews */,
+				CA7A040E2724612800352942 /* PrototypesView.swift */,
+				CAEFBA242721B93C004D4056 /* LoginScreenView.swift */,
+				CA693961272C517E003A8293 /* ContainerView.swift */,
 				CAEFBA262721B942004D4056 /* Assets.xcassets */,
 				CAEFBA282721B942004D4056 /* Preview Content */,
 			);
@@ -141,6 +128,8 @@
 			dependencies = (
 			);
 			name = YSVKSwiftUI;
+			packageProductDependencies = (
+			);
 			productName = YSVKSwiftUI;
 			productReference = CAEFBA1F2721B93C004D4056 /* YSVKSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +158,8 @@
 				Base,
 			);
 			mainGroup = CAEFBA162721B93B004D4056;
+			packageReferences = (
+			);
 			productRefGroup = CAEFBA202721B93C004D4056 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,7 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7A041A272480BC00352942 /* UserOnlineView.swift in Sources */,
-				CAEFBA252721B93C004D4056 /* ContentView.swift in Sources */,
+				CAEFBA252721B93C004D4056 /* LoginScreenView.swift in Sources */,
+				CA693962272C517E003A8293 /* ContainerView.swift in Sources */,
 				CA7A041C272482A500352942 /* GroupView.swift in Sources */,
 				CAEFBA232721B93C004D4056 /* YSVKSwiftUIApp.swift in Sources */,
 				CA7A040F2724612800352942 /* PrototypesView.swift in Sources */,
@@ -333,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YSVKSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NK62H99X6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -362,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YSVKSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NK62H99X6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
