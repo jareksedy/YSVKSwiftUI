@@ -12,12 +12,6 @@ struct MainTabView: View {
         
         //NavigationView {
             TabView {
-                FeedView()
-                    .tabItem {
-                        Image(systemName: "newspaper.fill")
-                        Text("Лента")
-                    }
-                
                 FriendsView()
                     .tabItem {
                         Image(systemName: "person.2.circle")
@@ -29,8 +23,13 @@ struct MainTabView: View {
                         Image(systemName: "person.3.sequence.fill")
                         Text("Группы")
                     }
+                
+                FeedView()
+                    .tabItem {
+                        Image(systemName: "newspaper.fill")
+                        Text("Лента")
+                    }
             }
-            Spacer()
         //}.navigationBarTitle("ВК-клиент")//.navigationBarHidden(true)
     }
 }
