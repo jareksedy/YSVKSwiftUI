@@ -8,12 +8,16 @@
 import Foundation
 
 class Group: Identifiable {
-    internal init(name: String, count: String) {
+    internal init(name: String, description: String, imageName: String, count: String) {
         self.name = name
+        self.description = description
+        self.imageName = imageName
         self.count = count
     }
     
     let id: UUID = UUID()
     let name: String
+    let description: String
+    let imageName: String
     let count: String
 }

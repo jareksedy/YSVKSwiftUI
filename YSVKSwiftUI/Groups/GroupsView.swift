@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct GroupsView: View {
+    private var groups: [Group] = [
+    Group(name: "Советский леттеринг", description: "Открытая группа.", imageName: "lettering", count: "14 282 подписчика.")
+    ]
     var body: some View {
-        Text("Группы")
+            List(groups) { group in
+                    GroupRowView(group: group)
+            }
+            .modifier(PlainList())
+            .navigationBarTitle("Группы", displayMode: .inline)
     }
 }
 
