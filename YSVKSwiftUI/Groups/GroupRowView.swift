@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct GroupRowView: View {
-    var group: Group
+    var group: GroupItem
     var body: some View {
-        HStack{
+        HStack {
             AvatarImage {
-                Image(group.imageName)
+                Image("lettering")
             }
             
             VStack(alignment: .leading) {
                 Text(group.name).modifier(TitleText())
-                Text(group.description).modifier(SubTitleText())
-                Text(group.count).modifier(SubTitleText())
-            }.padding(.leading, 10)
-        }.padding(.top, 20).padding(.bottom, 20)
+                Text(group.groupDescription ?? "").modifier(SubTitleText())
+            }
+        }
     }
+    //        HStack {
+//                AvatarImage {
+//                    Image(group.imageName)
+//                }
+    //
+    //            VStack(alignment: .leading) {
+    //                Text(group.name).modifier(TitleText())
+    //                Text(group.description).modifier(SubTitleText())
+    //                Text(group.count).modifier(SubTitleText())
+    //            }.padding(.leading, 10)
+    //        }.padding(.top, 20).padding(.bottom, 20)
+    //    }
 }

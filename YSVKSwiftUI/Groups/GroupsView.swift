@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct GroupsView: View {
-    private var groups: [Group] = [
-    Group(name: "Советский леттеринг", description: "Открытая группа.", imageName: "lettering", count: "14 282 подписчика.")
-    ]
+    @ObservedObject var viewModel: GroupViewModel
+    
+    init(viewModel: GroupViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
-            List(groups) { group in
-                    GroupRowView(group: group)
+        
+        List(viewModel.groups) { group in
+            GroupRowView(group: group)
             }
             .modifier(PlainList())
             .navigationBarTitle("Группы", displayMode: .inline)
+            .onAppear { viewModel.fetch() }
     }
 }
 
-struct GroupsView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupsView()
-    }
-}
+//
+//struct GroupsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GroupsView()
+//    }
+//}

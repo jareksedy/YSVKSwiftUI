@@ -18,24 +18,12 @@ struct MainTabView: View {
                         Text("Друзья")
                     }
                 
-                GroupsView()
+                GroupsView(viewModel: GroupViewModel(GroupAPI()))
                     .tabItem {
                         Image(systemName: "person.3.sequence.fill")
                         Text("Группы")
                     }
-                
-                FeedView()
-                    .tabItem {
-                        Image(systemName: "newspaper.fill")
-                        Text("Лента")
-                    }
-            }
-        //}.navigationBarTitle("ВК-клиент")//.navigationBarHidden(true)
-    }
-}
 
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
+            }
     }
 }

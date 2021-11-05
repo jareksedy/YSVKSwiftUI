@@ -17,6 +17,7 @@ struct PlainList: ViewModifier {
 struct TitleText: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .lineLimit(1)
             .font(.system(size: 22, weight: .light))
             .foregroundColor(.primary)
     }
@@ -25,6 +26,7 @@ struct TitleText: ViewModifier {
 struct SubTitleText: ViewModifier {
     func body(content: Content) -> some View {
         content
+            .lineLimit(1)
             .font(.system(size: 16, weight: .light))
             .foregroundColor(.secondary)
             .padding(.top, -5)
