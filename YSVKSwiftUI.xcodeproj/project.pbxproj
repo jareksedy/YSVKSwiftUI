@@ -19,6 +19,7 @@
 		CA7A041327246EB000352942 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A041227246EB000352942 /* Modifiers.swift */; };
 		CA7A0417272476F900352942 /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A0416272476F900352942 /* Builders.swift */; };
 		CA834E1E273623E900D8F12C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA834E1D273623E900D8F12C /* Kingfisher */; };
+		CA834E202736281700D8F12C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E1F2736281700D8F12C /* Extensions.swift */; };
 		CACF8CC327358006003170C7 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CC227358006003170C7 /* VKLoginWebView.swift */; };
 		CACF8CC627358333003170C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CACF8CC527358333003170C7 /* Alamofire */; };
 		CACF8CCB27358386003170C7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CCA27358386003170C7 /* Session.swift */; };
@@ -27,7 +28,6 @@
 		CACF8CD427358D76003170C7 /* GroupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CD327358D76003170C7 /* GroupAPI.swift */; };
 		CACF8CD627358F85003170C7 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CD527358F85003170C7 /* GroupViewModel.swift */; };
 		CAEFBA232721B93C004D4056 /* YSVKSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */; };
-		CAEFBA252721B93C004D4056 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFBA242721B93C004D4056 /* LoginScreenView.swift */; };
 		CAEFBA272721B942004D4056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEFBA262721B942004D4056 /* Assets.xcassets */; };
 		CAEFBA2A2721B942004D4056 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEFBA292721B942004D4056 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -44,6 +44,7 @@
 		CA693977272C69AC003A8293 /* GroupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRowView.swift; sourceTree = "<group>"; };
 		CA7A041227246EB000352942 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		CA7A0416272476F900352942 /* Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
+		CA834E1F2736281700D8F12C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CACF8CC227358006003170C7 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 		CACF8CCA27358386003170C7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		CACF8CCF27358CEB003170C7 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		CACF8CD527358F85003170C7 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		CAEFBA1F2721B93C004D4056 /* YSVKSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSVKSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSVKSwiftUIApp.swift; sourceTree = "<group>"; };
-		CAEFBA242721B93C004D4056 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		CAEFBA262721B942004D4056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEFBA292721B942004D4056 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +123,14 @@
 			path = Builders;
 			sourceTree = "<group>";
 		};
+		CA834E212736286600D8F12C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA834E1F2736281700D8F12C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CACF8CCC27358C78003170C7 /* Session */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				CAEFBA222721B93C004D4056 /* YSVKSwiftUIApp.swift */,
+				CA834E212736286600D8F12C /* Extensions */,
+				CACF8CCC27358C78003170C7 /* Session */,
 				CACF8CCE27358CD8003170C7 /* Models */,
 				CACF8CCD27358C92003170C7 /* Services */,
-				CACF8CCC27358C78003170C7 /* Session */,
 				CA7A041427246EC600352942 /* Modifiers */,
 				CA7A0418272476FF00352942 /* Builders */,
 				CA693967272C5E8C003A8293 /* Feed */,
@@ -178,7 +187,6 @@
 				CA69396D272C5F28003A8293 /* Groups */,
 				CA693961272C517E003A8293 /* ContainerView.swift */,
 				CACF8CC227358006003170C7 /* VKLoginWebView.swift */,
-				CAEFBA242721B93C004D4056 /* LoginScreenView.swift */,
 				CA693963272C5A7D003A8293 /* MainTabView.swift */,
 				CAEFBA262721B942004D4056 /* Assets.xcassets */,
 				CAEFBA282721B942004D4056 /* Preview Content */,
@@ -277,9 +285,9 @@
 				CACF8CD427358D76003170C7 /* GroupAPI.swift in Sources */,
 				CA69396F272C6067003A8293 /* FriendModel.swift in Sources */,
 				CACF8CD627358F85003170C7 /* GroupViewModel.swift in Sources */,
-				CAEFBA252721B93C004D4056 /* LoginScreenView.swift in Sources */,
 				CA693971272C626E003A8293 /* FriendRowView.swift in Sources */,
 				CA693978272C69AC003A8293 /* GroupRowView.swift in Sources */,
+				CA834E202736281700D8F12C /* Extensions.swift in Sources */,
 				CA693962272C517E003A8293 /* ContainerView.swift in Sources */,
 				CA69396C272C5F24003A8293 /* GroupsView.swift in Sources */,
 				CAEFBA232721B93C004D4056 /* YSVKSwiftUIApp.swift in Sources */,

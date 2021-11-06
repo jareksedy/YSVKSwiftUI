@@ -10,7 +10,6 @@ import WebKit
 
 struct VKLoginWebView: UIViewRepresentable {
     @ObservedObject var session = Session.instance
-    
     fileprivate let navigationDelegate = WebViewNavigationDelegate()
     
     func makeUIView(context: Context) -> WKWebView {
@@ -80,12 +79,6 @@ class WebViewNavigationDelegate: NSObject, WKNavigationDelegate {
         session.userId = userIdString
         session.isAuthorized = true
         
-        //UserDefaults.standard.set(token, forKey: "vkToken")
-        //NotificationCenter.default.post(name: .vkTokenSaved, object: self)
         decisionHandler(.cancel)
     }
-}
-
-extension Notification.Name {
-    static let vkTokenSaved = Notification.Name("vkTokenSaved")
 }

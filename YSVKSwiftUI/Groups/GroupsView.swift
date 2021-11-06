@@ -17,10 +17,12 @@ struct GroupsView: View {
     var body: some View {
         
         List(viewModel.groups) { group in
-            GroupRowView(group: group)
+            NavigationLink(destination: EmptyView()) {
+                GroupRowView(group: group)
             }
-            .modifier(PlainList())
-            .navigationBarTitle("Группы", displayMode: .inline)
-            .onAppear { viewModel.fetch() }
+        }
+        .modifier(PlainList())
+        .navigationBarTitle("Группы", displayMode: .inline)
+        .onAppear { viewModel.fetch() }
     }
 }

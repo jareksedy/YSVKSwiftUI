@@ -25,6 +25,10 @@ struct GroupRowView: View {
                     .modifier(SubTitleText())
                     .lineLimit(1)
                 
+                Text("\(group.membersCount.formattedString) подписчиков.")
+                    .modifier(SubTitleText())
+                    .lineLimit(1)
+                
             }.padding(.leading, 10)
         }.padding(.top, 20).padding(.bottom, 20)
     }
