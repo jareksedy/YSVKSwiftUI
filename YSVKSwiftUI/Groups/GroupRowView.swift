@@ -21,10 +21,6 @@ struct GroupRowView: View {
                     .modifier(TitleText())
                     .lineLimit(1)
                 
-                Text(group.groupDescription ?? "")
-                    .modifier(SubTitleText())
-                    .lineLimit(1)
-                
                 Text("\(group.membersCount.formattedString) подписчиков.")
                     .modifier(SubTitleText())
                     .lineLimit(1)

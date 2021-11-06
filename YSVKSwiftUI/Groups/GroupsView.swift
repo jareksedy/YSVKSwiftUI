@@ -15,14 +15,12 @@ struct GroupsView: View {
     }
     
     var body: some View {
-        
         List(viewModel.groups) { group in
-            NavigationLink(destination: EmptyView()) {
+            NavigationLink(destination: GroupPageView(group: group)) {
                 GroupRowView(group: group)
             }
         }
         .modifier(PlainList())
-        .navigationBarTitle("Группы", displayMode: .inline)
         .onAppear { viewModel.fetch() }
     }
 }

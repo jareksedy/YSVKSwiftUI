@@ -9,16 +9,13 @@ import SwiftUI
 
 struct ContainerView: View {
     @ObservedObject var session = Session.instance
-    
+
     var body: some View {
         NavigationView {
             HStack {
-                
                 VKLoginWebView()
-                NavigationLink(destination: MainTabView(), isActive: $session.isAuthorized) {
-                    EmptyView()
-                }
+                NavigationLink(destination: MainTabView(), isActive: $session.isAuthorized) { EmptyView() }
             }
-        }
+        }.navigationTitle("Авторизация")
     }
 }
