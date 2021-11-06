@@ -12,9 +12,9 @@ struct FriendRowView: View {
     
     var body: some View {
         HStack {
-            AvatarImage {
-                Image(friend.imageName)
-            }
+//            AvatarImage {
+//                Image(friend.imageName)
+//            }
             
             VStack(alignment: .leading) {
                 Text(friend.name).modifier(TitleText())

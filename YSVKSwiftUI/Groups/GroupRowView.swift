@@ -6,31 +6,26 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct GroupRowView: View {
     var group: GroupItem
     var body: some View {
         HStack {
             AvatarImage {
-                Image("lettering")
+                KFImage(URL(string: group.imageURL)!)
             }
             
             VStack(alignment: .leading) {
-                Text(group.name).modifier(TitleText())
-                Text(group.groupDescription ?? "").modifier(SubTitleText())
-            }
-        }
+                Text(group.name)
+                    .modifier(TitleText())
+                    .lineLimit(1)
+                
+                Text(group.groupDescription ?? "")
+                    .modifier(SubTitleText())
+                    .lineLimit(1)
+                
+            }.padding(.leading, 10)
+        }.padding(.top, 20).padding(.bottom, 20)
     }
-    //        HStack {
-//                AvatarImage {
-//                    Image(group.imageName)
-//                }
-    //
-    //            VStack(alignment: .leading) {
-    //                Text(group.name).modifier(TitleText())
-    //                Text(group.description).modifier(SubTitleText())
-    //                Text(group.count).modifier(SubTitleText())
-    //            }.padding(.leading, 10)
-    //        }.padding(.top, 20).padding(.bottom, 20)
-    //    }
 }

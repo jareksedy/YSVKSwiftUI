@@ -18,9 +18,9 @@
 		CA693978272C69AC003A8293 /* GroupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA693977272C69AC003A8293 /* GroupRowView.swift */; };
 		CA7A041327246EB000352942 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A041227246EB000352942 /* Modifiers.swift */; };
 		CA7A0417272476F900352942 /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A0416272476F900352942 /* Builders.swift */; };
+		CA834E1E273623E900D8F12C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA834E1D273623E900D8F12C /* Kingfisher */; };
 		CACF8CC327358006003170C7 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CC227358006003170C7 /* VKLoginWebView.swift */; };
 		CACF8CC627358333003170C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CACF8CC527358333003170C7 /* Alamofire */; };
-		CACF8CC927358373003170C7 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CACF8CC827358373003170C7 /* AlamofireImage */; };
 		CACF8CCB27358386003170C7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CCA27358386003170C7 /* Session.swift */; };
 		CACF8CD027358CEB003170C7 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CCF27358CEB003170C7 /* Friend.swift */; };
 		CACF8CD227358D17003170C7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CD127358D17003170C7 /* Group.swift */; };
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA834E1E273623E900D8F12C /* Kingfisher in Frameworks */,
 				CACF8CC627358333003170C7 /* Alamofire in Frameworks */,
-				CACF8CC927358373003170C7 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 			name = YSVKSwiftUI;
 			packageProductDependencies = (
 				CACF8CC527358333003170C7 /* Alamofire */,
-				CACF8CC827358373003170C7 /* AlamofireImage */,
+				CA834E1D273623E900D8F12C /* Kingfisher */,
 			);
 			productName = YSVKSwiftUI;
 			productReference = CAEFBA1F2721B93C004D4056 /* YSVKSwiftUI.app */;
@@ -244,7 +244,7 @@
 			mainGroup = CAEFBA162721B93B004D4056;
 			packageReferences = (
 				CACF8CC427358333003170C7 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				CACF8CC727358373003170C7 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				CA834E1C273623E900D8F12C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CAEFBA202721B93C004D4056 /* Products */;
 			projectDirPath = "";
@@ -497,6 +497,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA834E1C273623E900D8F12C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		CACF8CC427358333003170C7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -505,26 +513,18 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		CACF8CC727358373003170C7 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA834E1D273623E900D8F12C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA834E1C273623E900D8F12C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		CACF8CC527358333003170C7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CACF8CC427358333003170C7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		CACF8CC827358373003170C7 /* AlamofireImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CACF8CC727358373003170C7 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
-			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

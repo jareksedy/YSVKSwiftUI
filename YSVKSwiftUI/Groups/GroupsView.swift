@@ -24,10 +24,3 @@ struct GroupsView: View {
             .onAppear { viewModel.fetch() }
     }
 }
-
-//
-//struct GroupsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        GroupsView()
-//    }
-//}
