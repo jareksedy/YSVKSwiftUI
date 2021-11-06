@@ -16,6 +16,6 @@ struct ContainerView: View {
                 VKLoginWebView()
                 NavigationLink(destination: MainTabView(), isActive: $session.isAuthorized) { EmptyView() }
             }
-        }.navigationTitle("Авторизация")
+        }
     }
 }

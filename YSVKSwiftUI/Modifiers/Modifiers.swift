@@ -31,6 +31,15 @@ struct SubTitleText: ViewModifier {
     }
 }
 
+struct OfflineText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 16, weight: .light))
+            .foregroundColor(.secondary)
+            .padding(.top, -5)
+    }
+}
+
 struct OnlineText: ViewModifier {
     func body(content: Content) -> some View {
         content

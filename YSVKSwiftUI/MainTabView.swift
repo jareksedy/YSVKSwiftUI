@@ -11,7 +11,7 @@ struct MainTabView: View {
     
     var body: some View {
         TabView {
-            FriendsView()
+            FriendsView(viewModel: FriendViewModel(FriendAPI()))
                 .navigationBarTitle("", displayMode: .inline)
                 .tabItem {
                     Image(systemName: "person.2.circle")
