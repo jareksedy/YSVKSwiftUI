@@ -17,6 +17,10 @@ struct FriendPageView: View {
             Text("\(friend.firstName) \(friend.lastName)")
                 .modifier(TitleText())
             
+            Spacer().frame(height: 50.0)
+            
+            LikeButton()
+            
             Spacer()
         }.padding()
     }
