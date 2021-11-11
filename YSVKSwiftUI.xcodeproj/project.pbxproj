@@ -22,6 +22,7 @@
 		CA834E252736415100D8F12C /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E242736415100D8F12C /* FriendsAPI.swift */; };
 		CA834E272736426A00D8F12C /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E262736426A00D8F12C /* FriendViewModel.swift */; };
 		CA834E292736482800D8F12C /* FriendPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E282736482800D8F12C /* FriendPageView.swift */; };
+		CAA00EAB273D610A002FB6C4 /* TouchGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA00EAA273D610A002FB6C4 /* TouchGesture.swift */; };
 		CACF8CC327358006003170C7 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CC227358006003170C7 /* VKLoginWebView.swift */; };
 		CACF8CC627358333003170C7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CACF8CC527358333003170C7 /* Alamofire */; };
 		CACF8CCB27358386003170C7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF8CCA27358386003170C7 /* Session.swift */; };
@@ -49,6 +50,7 @@
 		CA834E242736415100D8F12C /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
 		CA834E262736426A00D8F12C /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
 		CA834E282736482800D8F12C /* FriendPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPageView.swift; sourceTree = "<group>"; };
+		CAA00EAA273D610A002FB6C4 /* TouchGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchGesture.swift; sourceTree = "<group>"; };
 		CACF8CC227358006003170C7 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 		CACF8CCA27358386003170C7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		CACF8CCF27358CEB003170C7 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CA834E1F2736281700D8F12C /* Extensions.swift */,
+				CAA00EAA273D610A002FB6C4 /* TouchGesture.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				CA693964272C5A7D003A8293 /* MainTabView.swift in Sources */,
 				CACF8CC327358006003170C7 /* VKLoginWebView.swift in Sources */,
 				CACF8CD427358D76003170C7 /* GroupAPI.swift in Sources */,
+				CAA00EAB273D610A002FB6C4 /* TouchGesture.swift in Sources */,
 				CA834E292736482800D8F12C /* FriendPageView.swift in Sources */,
 				CACF8CD627358F85003170C7 /* GroupViewModel.swift in Sources */,
 				CA693971272C626E003A8293 /* FriendRowView.swift in Sources */,
