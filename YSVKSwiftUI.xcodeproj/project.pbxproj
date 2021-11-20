@@ -17,6 +17,7 @@
 		CA7A041327246EB000352942 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A041227246EB000352942 /* Modifiers.swift */; };
 		CA7A0417272476F900352942 /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A0416272476F900352942 /* Builders.swift */; };
 		CA7F2D6F2748DA2D00BEAF17 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7F2D6E2748DA2D00BEAF17 /* Photo.swift */; };
+		CA7F2D712748DAF100BEAF17 /* PhotoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7F2D702748DAF100BEAF17 /* PhotoAPI.swift */; };
 		CA834E1E273623E900D8F12C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA834E1D273623E900D8F12C /* Kingfisher */; };
 		CA834E202736281700D8F12C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E1F2736281700D8F12C /* Extensions.swift */; };
 		CA834E2327362D3500D8F12C /* GroupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA834E2227362D3500D8F12C /* GroupPageView.swift */; };
@@ -48,6 +49,7 @@
 		CA7A041227246EB000352942 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		CA7A0416272476F900352942 /* Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
 		CA7F2D6E2748DA2D00BEAF17 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CA7F2D702748DAF100BEAF17 /* PhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPI.swift; sourceTree = "<group>"; };
 		CA834E1F2736281700D8F12C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CA834E2227362D3500D8F12C /* GroupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPageView.swift; sourceTree = "<group>"; };
 		CA834E242736415100D8F12C /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CACF8CD327358D76003170C7 /* GroupAPI.swift */,
+				CA7F2D702748DAF100BEAF17 /* PhotoAPI.swift */,
 				CA834E242736415100D8F12C /* FriendsAPI.swift */,
 			);
 			path = Services;
@@ -298,6 +301,7 @@
 				CA7F2D6F2748DA2D00BEAF17 /* Photo.swift in Sources */,
 				CA693964272C5A7D003A8293 /* MainTabView.swift in Sources */,
 				CACF8CC327358006003170C7 /* VKLoginWebView.swift in Sources */,
+				CA7F2D712748DAF100BEAF17 /* PhotoAPI.swift in Sources */,
 				CACF8CD427358D76003170C7 /* GroupAPI.swift in Sources */,
 				CAA00EAB273D610A002FB6C4 /* TouchGesture.swift in Sources */,
 				CA834E292736482800D8F12C /* FriendPageView.swift in Sources */,
