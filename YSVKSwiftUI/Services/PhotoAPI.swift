@@ -17,11 +17,9 @@ class PhotoAPI: PhotoService {
     
     let baseUrl = "https://api.vk.com/method"
     let method = "/photos.getAll"
+    var params: Parameters = [:]
     
-    var params: Parameters
-    
-    init(_ session: Session) {
-        
+    func get(_ completion: @escaping (Photos?) -> ()) {
         self.params = [
             "client_id": session.cliendId,
             "user_id": session.userId,
@@ -29,10 +27,6 @@ class PhotoAPI: PhotoService {
             "count": 200,
             "v": session.version,
         ]
-        
-    }
-    
-    func get(_ completion: @escaping (Photos?) -> ()) {
         
         let url = baseUrl + method
         
