@@ -23,7 +23,7 @@ struct PhotoResponse: Codable {
 
 // MARK: - Item
 
-struct PhotoItem: Codable {
+struct PhotoItem: Codable, Identifiable {
     let albumID, date, id, ownerID: Int?
     let hasTags: Bool?
     let sizes: [Size]?
