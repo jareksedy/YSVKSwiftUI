@@ -19,6 +19,13 @@ struct MainTabView: View {
                 }
             
             
+            PhotoView(viewModel: PhotosViewModel(PhotoAPI()))
+                .navigationBarTitle("", displayMode: .inline)
+                .tabItem {
+                    Image(systemName: "photo.fill")
+                    Text("Фото")
+                }
+            
             GroupsView(viewModel: GroupViewModel(GroupAPI()))
                 .navigationBarTitle("", displayMode: .inline)
                 .tabItem {
