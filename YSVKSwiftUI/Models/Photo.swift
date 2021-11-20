@@ -7,6 +7,7 @@
 
 
 import Foundation
+import SwiftUI
 
 // MARK: - Feed
 
@@ -57,8 +58,8 @@ struct PhotoItem: Codable, Identifiable {
 // MARK: - Size
 
 struct Size: Codable {
-    let height: Int
+    let width: CGFloat
+    let height: CGFloat
     let url: String
     let type: String
-    let width: Int
 }

@@ -27,10 +27,12 @@ struct PhotoView: View {
             LazyVGrid(columns: columns, spacing: 2) {
                 ForEach(viewModel.photos) { photo in
                     GeometryReader { geometry in
-                        KFImage(URL(string: photo.photoAvailable!.url)!)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(height: geometry.size.width)
+                        NavigationLink(destination: PhotoItemView(photo: photo)) {
+                            KFImage(URL(string: photo.photoAvailable!.url)!)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: geometry.size.width)
+                        }
                     }
                     .clipped()
                     .aspectRatio(1, contentMode: .fit)
